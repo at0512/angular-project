@@ -28,11 +28,7 @@ export class LoginComponent {
 
   Submit(mail:any, word:any){   
     if(this.username==mail && this.password==word){ 
-     //this.router.navigate(['home']) 
-     this.auth.send_post_request(  
-      this.angForm.value
-     ).subscribe() 
-     console.log('submitted')
+     this.router.navigate(['home']) 
     } 
     else{ 
       this.confirm='error' 

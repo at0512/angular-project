@@ -13,6 +13,6 @@ export class FlaskserviceService {
   send_post_request(data:any){ 
     return this.http.post( 
     this.server_address,
-    JSON.stringify(data) )
+    data)
   }
 }

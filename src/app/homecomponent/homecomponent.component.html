@@ -1,7 +1,8 @@
 <div> 
     <form> 
-        <label>upload a file</label>
-        <input type="file" /> 
-        <button>upload</button>
+        <label>upload a file</label> 
+        <input type="text"(change)="getname(name.value)" #name /> <br>
+        <input type="file" (change)="getfile($event)" /> <br>
+        <button type="button" (click)="submitData()" >upload</button>
     </form>
 </div>
